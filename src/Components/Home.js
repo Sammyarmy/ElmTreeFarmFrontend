@@ -1,6 +1,7 @@
 ﻿import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import house from "../ChristmasElmTreeFarm.jpg";
+import NavBar from "./NavBar";
 
 const Home = () => {
     
@@ -18,7 +19,7 @@ const Home = () => {
 
     return (
         <div className="weather">
-            <Link to="/contact">Contact</Link>
+            <NavBar></NavBar>
             {weatherForecast ? (
                 <header className="weather-forecast-container">
                     {
