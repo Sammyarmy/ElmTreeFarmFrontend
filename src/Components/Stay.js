@@ -8,7 +8,7 @@ const Stay = () => {
                 <NavBar></NavBar>
                 <h1 className="stay"> Stay</h1> 
         <a
-            className="App-link"
+            className="air-bnb-link"
             href="https://www.airbnb.co.uk/"
             target="_blank"
             rel="noopener noreferrer"

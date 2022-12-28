@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         async function fetchWeatherForecast() {
-            const response = await fetch('https://elmtreefarmbackend.azurewebsites.net/weatherforecast');
+            const response = await fetch('https://elmtreefarmbackend.azurewebsites.net/');
             const data = await response.json();
             setWeatherForecast(data);
         }
@@ -27,7 +27,7 @@ const Home = () => {
                             <p className="name"> Location: {weatherForecast.location.name} </p>
                             <p className="date"> Date: {weatherForecast.location.localtime} </p>
                             <p className="temp"> Temp: {weatherForecast.current.temp_c}</p>
-                            <img src={weatherForecast.current.condition.icon} className="logo" alt="weather"/>
+                            <img src={weatherForecast.current.condition.icon} className="logo" alt="Weather"/>
                         </div>
                     }
                 </header>
@@ -35,7 +35,7 @@ const Home = () => {
                 <p>Loading weather forecast...</p>
             )}
             <header className="house-photo">
-                <img style={{width: 1200, height: 900}} src={house} className="HousePhoto" alt="HousePhoto"/>
+                <img style={{width: 1100, height: 700}} src={house} className="HousePhoto" alt="HousePhoto"/>
                 <p> Christmas at Elm tree farm</p>
             </header>
         </div>)
