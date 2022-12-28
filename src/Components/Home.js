@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         async function fetchWeatherForecast() {
-            const response = await fetch('https://elmtreefarmbackend.azurewebsites.net/');
+            const response = await fetch('https://elmtreefarmbackend.azurewebsites.net/weatherforecast');
             const data = await response.json();
             setWeatherForecast(data);
         }
